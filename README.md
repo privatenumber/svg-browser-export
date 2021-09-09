@@ -24,7 +24,7 @@ const exportedFileUrl = await exportSvg(svgString, 'png')
 
 ## 👩‍🏫 Examples
 
-### Exporting a SVG on the page
+### Exporting an SVG on the page
 Select the DOM element (eg. using [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)) and access `.innerHTML` for the SVG string.
 ```ts
 const svgElement = document.querySelector('.svg-selector')
