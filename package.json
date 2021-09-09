@@ -1,0 +1,50 @@
+{
+	"name": "svg-browser-export",
+	"version": "0.0.0-semantic-release",
+	"description": "Export SVG to PNG, JPEG, or WEBP in the browser",
+	"keywords": [
+		"svg",
+		"png",
+		"jpeg",
+		"webp",
+		"export",
+		"convert",
+		"save",
+		"browser",
+		"frontend"
+	],
+	"license": "MIT",
+	"repository": "privatenumber/svg-browser-export",
+	"funding": "https://github.com/privatenumber/svg-browser-export?sponsor=1",
+	"author": {
+		"name": "Hiroki Osame",
+		"email": "hiroki.osame@gmail.com"
+	},
+	"files": [
+		"dist"
+	],
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "tsc",
+		"lint": "eslint ."
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.ts": [
+			"eslint",
+			"jest --bail --findRelatedTests"
+		]
+	},
+	"devDependencies": {
+		"@pvtnbr/eslint-config": "^0.2.0",
+		"eslint": "^7.32.0",
+		"typescript": "^4.4.2"
+	},
+	"eslintConfig": {
+		"extends": "@pvtnbr"
+	}
+}
