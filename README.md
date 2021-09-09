@@ -1,4 +1,4 @@
-# svg-browser-export <a href="https://npm.im/svg-browser-export"><img src="https://badgen.net/npm/v/svg-browser-export"></a> <a href="https://npm.im/svg-browser-export"><img src="https://badgen.net/npm/dm/svg-browser-export"></a> <a href="https://packagephobia.now.sh/result?p=svg-browser-export"><img src="https://packagephobia.now.sh/badge?p=svg-browser-export"></a>
+# svg-browser-export <a href="https://npm.im/svg-browser-export"><img src="https://badgen.net/npm/v/svg-browser-export"></a> <a href="https://npm.im/svg-browser-export"><img src="https://badgen.net/npm/dm/svg-browser-export"></a> <a href="https://bundlephobia.com/result?p=svg-browser-export"><img src="https://badgen.net/bundlephobia/minzip/svg-browser-export"></a>
 
 Export SVG to PNG, JPEG, or WEBP in the browser
 
