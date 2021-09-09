@@ -24,14 +24,15 @@ const exportedFileUrl = await exportSvg(svgString, 'png')
 
 ## 👩‍🏫 Examples
 
-### Getting a download URL for a SVG on the page
+### Exporting a SVG on the page
+Select the DOM element (eg. using [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)) and access `.innerHTML` for the SVG string.
 ```ts
 const svgElement = document.querySelector('.svg-selector')
 
 const exportedFileUrl = await exportSvg(svgElement.innerHTML, 'png')
 ```
 
-### Downloading a SVG automatically
+### Downloading the exported file
 Use it with [downloadjs](https://www.npmjs.com/package/downloadjs) to automatically download the exported asset.
 
 ```ts
@@ -42,7 +43,7 @@ import download from 'downloadjs'
 
 const exportedFileUrl = await exportSvg(svgString, 'png')
 
-download(exportedFileUrl, 'fileName.png')
+download(exportedFileUrl, 'anyFileName.png')
 
 ```
 
@@ -55,7 +56,7 @@ Returns a promise that resolves to the exported file as a Base64 data URL.
 #### svgString
 Type: `string`
 
-The SVG string.
+The SVG string to convert.
 
 #### exportFormat
 Type: `'png' | 'jpeg' | 'bmp' | 'ico' | 'webp'`
